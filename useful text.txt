@@ -1,0 +1,6 @@
+// to build your project for android device or ios
+
+
+// eas build -p android --profile preview
+// yarn global add eas-cli
+// expo doctor --fix-dependencies
