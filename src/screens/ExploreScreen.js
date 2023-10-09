@@ -31,7 +31,7 @@ const ExploreScreen = () => {
       .then((response) => {
         // setResult(JSON.stringify(response.data, null, 2));
         const formattedText = `Response Status: ${response.status}\nResponse Data:\n`;
-      setResult(formattedText, responseData);
+      setResult(formattedText, response);
       })
       .catch((error) => {
         console.error(error);
