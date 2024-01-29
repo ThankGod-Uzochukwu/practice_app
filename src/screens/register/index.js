@@ -3,7 +3,7 @@ import { View, Text, SafeAreaView, TextInput, StyleSheet, TouchableOpacity} from
 
 
 
-const RegisterScreen = ({navigation}) => {
+const Register = ({navigation}) => {
 
 
     const [name, setName] = useState('');
@@ -83,7 +83,7 @@ const RegisterScreen = ({navigation}) => {
   )
 }
 
-export default RegisterScreen
+export default Register
 
 const styles = StyleSheet.create({
     root:{

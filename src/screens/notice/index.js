@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, SafeAreaView } from 'react-native'
 import React from 'react'
 import { ScrollView } from 'react-native'
 
-const NoticeScreen = () => {
+const Notice = () => {
   return (
     <SafeAreaView style={styles.root}>
     <ScrollView showsVerticalScrollIndicator = {false}>
@@ -18,7 +18,7 @@ const NoticeScreen = () => {
   )
 }
 
-export default NoticeScreen
+export default Notice
 
 const styles = StyleSheet.create({
   root:{

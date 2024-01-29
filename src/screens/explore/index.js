@@ -8,7 +8,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 
 
 
-const ExploreScreen = () => {
+const Explore = () => {
   const [query, setQuery] = useState('');
   const [result, setResult] = useState('');
 
@@ -57,7 +57,7 @@ const ExploreScreen = () => {
   );
 }
 
-export default ExploreScreen;
+export default Explore;
 
 const styles = StyleSheet.create({
   root:{

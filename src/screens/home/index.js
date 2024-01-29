@@ -5,7 +5,7 @@ import axios from 'axios'
 
 
 
-const HomeScreen = ({navigation}) => {
+const Home = ({navigation}) => {
 
     let [quote, setQuote] = useState('')
     let [source, setSource] = useState('')
@@ -134,7 +134,7 @@ const HomeScreen = ({navigation}) => {
   )
 }
 
-export default HomeScreen
+export default Home
 
 const styles = StyleSheet.create({
   root:{
