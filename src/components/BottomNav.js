@@ -15,7 +15,7 @@ const Tab = createBottomTabNavigator();
 
 const BottomNav = () => {
   return (
-    <NavigationContainer>
+    // <NavigationContainer>
       <Tab.Navigator
         initialRouteName="Notice"
         tabBarOptions={{
@@ -43,7 +43,7 @@ const BottomNav = () => {
           }}
         />
       </Tab.Navigator>
-    </NavigationContainer>
+    // </NavigationContainer>
          
   )
 }

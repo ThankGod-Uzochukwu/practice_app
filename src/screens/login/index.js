@@ -4,7 +4,7 @@ import Spinner from 'react-native-loading-spinner-overlay';
 import axios from 'axios';
 
 
-const LoginScreen = ({navigation}) => {
+const Login = ({navigation}) => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -77,7 +77,7 @@ const LoginScreen = ({navigation}) => {
   )
 };
 
-export default LoginScreen
+export default Login
 
 const styles = StyleSheet.create({
     root:{
