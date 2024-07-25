@@ -1,12 +1,12 @@
 import { NavigationContainer } from '@react-navigation/native';
-import LoginScreen from '../screens/LoginScreen';
-import HomeScreen from '../screens/HomeScreen';
-import RegisterScreen from '../screens/RegisterScreen';
-import NoticeScreen from '../screens/NoticeScreen';
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import BottomNav from './BottomNav';
-import ExploreScreen from '../screens/ExploreScreen';
+import Notice from '../screens/notice/index'
+import Home from '../screens/home/index'
+import Explore from '../screens/explore/index'
+import Login from '../screens/login/index'
+import Register from '../screens/register/index'
+
 
 
 const Stack = createNativeStackNavigator();
@@ -16,12 +16,11 @@ const Navigation = () => {
   return (
     // <NavigationContainer>
     <Stack.Navigator>
-        <Stack.Screen options={{headerShown: false}} name="Login" component={LoginScreen} />
-        <Stack.Screen options={{headerShown: false}} name="Register" component={RegisterScreen} />
-        <Stack.Screen options={{headerShown: false}} name="Home" component={HomeScreen} />
-        <Stack.Screen options={{headerShown: false}} name="Explore" component={ExploreScreen} />
-        <Stack.Screen options={{headerShown: false}} name="Notice" component={NoticeScreen} />
-        <Stack.Screen options={{headerShown: false}} name="Bottom" component={BottomNav} />
+        <Stack.Screen options={{headerShown: false}} name="Login" component={Login} />
+        <Stack.Screen options={{headerShown: false}} name="Register" component={Register} />
+        <Stack.Screen options={{headerShown: false}} name="Home" component={Home} />
+        <Stack.Screen options={{headerShown: false}} name="Explore" component={Explore} />
+        <Stack.Screen options={{headerShown: false}} name="Notice" component={Notice} />
     </Stack.Navigator>
     // </NavigationContainer>
   )

@@ -1,12 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
-import DiscoverScreen from '../screens/ExploreScreen';
-import NoticeScreen from '../screens/NoticeScreen';
-import ProfileScreen from '../screens/ProfileScreen';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React from 'react'
 import 'react-native-gesture-handler';
-import Icon from 'react-native-vector-icons/Ionicons';
 import { NavigationContainer } from '@react-navigation/native';
+import Notice from '../screens/notice/index'
+import Profile from '../screens/profile/index'
+import Home from '../screens/home';
+import { Ionicons } from '@expo/vector-icons';
+
+
 
 
 
@@ -17,28 +19,41 @@ const BottomNav = () => {
   return (
     // <NavigationContainer>
       <Tab.Navigator
-        initialRouteName="Notice"
+        screenOptions={{
+        headerShown: false,
+        }}
+        initialRouteName="Home"
         tabBarOptions={{
           activeTintColor: 'blue',
           inactiveTintColor: 'gray',
         }}>
         <Tab.Screen
           name="Home"
-          component={NoticeScreen}
+          component={Home}
           options={{
             tabBarLabel: 'Home',
             tabBarIcon: ({ color, size }) => (
-              <Icon name="home" color='red' size= '24' />
+              <Ionicons name="home" size={24} color="black" />
+            ),
+          }}
+        />
+        <Tab.Screen
+          name="Notice"
+          component={Notice}
+          options={{
+            tabBarLabel: 'Notice',
+            tabBarIcon: ({ color, size }) => (
+              <Ionicons name="notifications" size={24} color="black" />
             ),
           }}
         />
         <Tab.Screen
           name="Profile"
-          component={ProfileScreen}
+          component={Profile}
           options={{
             tabBarLabel: 'Profile',
             tabBarIcon: ({ color, size }) => (
-              <Icon name="person" color= 'red' size= '24' />
+              <Ionicons name="person" size={24} color="black" />
             ),
           }}
         />
