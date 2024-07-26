@@ -3,9 +3,9 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React from 'react'
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
-import Notice from '../screens/notice/index'
-import Profile from '../screens/profile/index'
-import Home from '../screens/home';
+import Notice from '../authenticated/notice/index'
+import Profile from '../authenticated/profile/index'
+import Home from '../authenticated/home';
 import { Ionicons } from '@expo/vector-icons';
 
 

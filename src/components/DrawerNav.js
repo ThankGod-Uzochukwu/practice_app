@@ -1,8 +1,8 @@
 import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import Home from '../screens/home';
-import Setting from '../screens/setting' 
-import MapView from '../screens/maps'
+import Home from '../authenticated/home';
+import Setting from '../authenticated/setting' 
+import MapView from '../authenticated/maps'
 
 const Drawer = createDrawerNavigator();
 
