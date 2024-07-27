@@ -7,6 +7,7 @@ import Notice from '../authenticated/notice/index'
 import Profile from '../authenticated/profile/index'
 import Home from '../authenticated/home';
 import { Ionicons } from '@expo/vector-icons';
+import Explore from '../authenticated/explore';
 
 
 
@@ -54,6 +55,16 @@ const BottomNav = () => {
             tabBarLabel: 'Profile',
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="person" size={24} color="black" />
+            ),
+          }}
+        />
+        <Tab.Screen
+          name="Explore"
+          component={Explore}
+          options={{
+            tabBarLabel: 'Profile',
+            tabBarIcon: ({ color, size }) => (
+              <Ionicons name="earth" size={24} color="black" />
             ),
           }}
         />

@@ -6,6 +6,7 @@ import Home from '../authenticated/home/index'
 import Explore from '../authenticated/explore/index'
 import Login from '../unauthenticated/login/index'
 import Register from '../unauthenticated/register/index'
+import BottomNav from './BottomNav';
 
 
 
@@ -18,9 +19,7 @@ const Navigation = () => {
     <Stack.Navigator>
         <Stack.Screen options={{headerShown: false}} name="Login" component={Login} />
         <Stack.Screen options={{headerShown: false}} name="Register" component={Register} />
-        <Stack.Screen options={{headerShown: false}} name="Home" component={Home} />
-        <Stack.Screen options={{headerShown: false}} name="Explore" component={Explore} />
-        <Stack.Screen options={{headerShown: false}} name="Notice" component={Notice} />
+        <Stack.Screen options={{headerShown: false}} name="Home" component={BottomNav} />
     </Stack.Navigator>
     // </NavigationContainer>
   )
