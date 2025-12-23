@@ -3,4 +3,3 @@
 
 // eas build -p android --profile preview
 // yarn global add eas-cli
-// expo doctor --fix-dependencies
