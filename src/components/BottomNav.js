@@ -3,11 +3,10 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React from 'react'
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
-import Notice from '../authenticated/notice/index'
-import Profile from '../authenticated/profile/index'
-import Home from '../authenticated/home';
+import Notice from '../screens/notice/index'
+import Profile from '../screens/profile/index'
+import Home from '../screens/home';
 import { Ionicons } from '@expo/vector-icons';
-import Explore from '../authenticated/explore';
 
 
 
@@ -55,16 +54,6 @@ const BottomNav = () => {
             tabBarLabel: 'Profile',
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="person" size={24} color="black" />
-            ),
-          }}
-        />
-        <Tab.Screen
-          name="Explore"
-          component={Explore}
-          options={{
-            tabBarLabel: 'Profile',
-            tabBarIcon: ({ color, size }) => (
-              <Ionicons name="earth" size={24} color="black" />
             ),
           }}
         />
